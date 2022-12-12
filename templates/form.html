@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text to image Generation</title>
+    </head>
+    
+    <body> 
+    <div>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Prompt: <input type="text" name="prompt", placeholder="enter you prompt here" required/>
+            <br><br>           
+            <button value="Submit">Generate</button>
+        </form>
+        <br><br>
+        <center><img id="picture" src="data:image/jpeg;base64,{{ img_data }}" width="400px"></center>  
+    </div>
+    </body>
+</html>
